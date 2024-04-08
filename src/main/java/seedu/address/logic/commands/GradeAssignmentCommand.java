@@ -80,8 +80,10 @@ public class GradeAssignmentCommand extends Command {
         if (model.shouldPurgeAddressBook()) {
             model.purgeAddressBook();
         }
-        return new CommandResult(String.format(MESSAGE_SUCCESS, assignmentName,
-            assignmentScore, personToMark.getName()));
+        CommandResult gradeAssignmentCommandResult = new CommandResult(String.format(MESSAGE_SUCCESS, assignmentName,
+                assignmentScore, personToMark.getName()));
+        model.commitAddressBook(gradeAssignmentCommandResult);
+        return gradeAssignmentCommandResult;
     }
 
     @Override

@@ -43,7 +43,7 @@ class JsonAdaptedAssignment {
         if (!Assignment.isValidAssignmentName(assignmentName)) {
             throw new IllegalValueException(Assignment.MESSAGE_CONSTRAINTS);
         }
-        return new Assignment(assignmentName);
+        return new Assignment(assignmentName, score);
     }
 
 }
