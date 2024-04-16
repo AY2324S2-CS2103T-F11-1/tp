@@ -11,6 +11,8 @@ title: Developer Guide
 
 * nerdTrackerPlus is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org/)
 
+* Github Co-pilot was used as an auto-complete tool by James Shen in most of his code.
+
 --------------------------------------------------------------------------------------------------------------------
 
 ## **Setting up, getting started**
